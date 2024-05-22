@@ -1,1 +1,21 @@
 <h2>Usuários Cadastrados</h2>
+
+<ul>
+    {{#each usuarios}}
+    <li>
+        {{#if this.nome}}
+            {{this.nome}}
+        {{else}}
+            Nome não cadastrado
+        {{/if}} 
+        - 
+        {{#if this.endereco}}
+            {{this.endereco}}
+        {{else}}
+            Endereço não cadastrado
+        {{/if}}
+    </li>
+    {{/each}}
+</ul>
+
+
